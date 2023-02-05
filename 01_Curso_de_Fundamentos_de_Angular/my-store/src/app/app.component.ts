@@ -24,4 +24,10 @@ export class AppComponent {
   addAge(){
     this.person.age +=1;
   }
+
+  onScroll(event:Event){
+    const element = event.target as HTMLElement;
+    console.log(element.scrollTop);
+
+  }
 }
