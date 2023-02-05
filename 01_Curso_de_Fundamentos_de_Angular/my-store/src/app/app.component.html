@@ -2,7 +2,10 @@
 <input type="text" [(ngModel)]="person.name">
 <input type="number" [(ngModel)]="person.age" min="10" max="30">
 <p *ngIf="person.name === 'yfs'">Soy yfs</p>
-<p *ngIf="person.name === 'aaa' && person.age === 20">Soy aaa con 20</p>
+<p *ngIf="person.name === 'aaa' && person.age === 20; else elseBlock">Soy aaa con 20</p>
+<ng-template #elseBlock>
+  <p>Bloque else</p>
+</ng-template>
 <hr>
 <h1>NgModel</h1>
 <input type="text" required #nameInput="ngModel" [(ngModel)]="person.name">
