@@ -1,6 +1,8 @@
 <h1>NgModel</h1>
 <input type="text" required #nameInput="ngModel" [(ngModel)]="person.name">
 <p>Valid : {{ nameInput.valid }} </p>
+<input type="number" #ageInput="ngModel" [(ngModel)]="person.age" min="10" max="30">
+<p>Valid : {{ ageInput.valid }} </p>
 <hr>
 <h1>eventos keyup</h1>
 <p>Nombre {{ person.name }}</p>
