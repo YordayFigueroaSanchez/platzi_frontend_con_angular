@@ -16,4 +16,12 @@ export class AppComponent {
   name : 'YFS',
   img : 'https://www.w3schools.com/howto/img_avatar.png'
   }
+
+  onToggle(){
+    this.btnDisabled = !this.btnDisabled;
+  }
+
+  addAge(){
+    this.person.age +=1;
+  }
 }
