@@ -17,6 +17,7 @@ export class AppComponent {
   img : 'https://www.w3schools.com/howto/img_avatar.png'
   }
   names : string[] = ['name01','name02','name03','name04',]
+  newName : string = '';
 
   onToggle(){
     this.btnDisabled = !this.btnDisabled;
@@ -36,5 +37,13 @@ export class AppComponent {
     const element = event.target as HTMLInputElement;
     this.person.name = element.value;
 
+  }
+
+  addName(){
+    this.names.push(this.newName)
+  }
+
+  deleteName(index: number){
+    this.names.splice(index,1);
   }
 }

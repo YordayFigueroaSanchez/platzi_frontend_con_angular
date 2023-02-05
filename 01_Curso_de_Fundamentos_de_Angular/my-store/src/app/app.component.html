@@ -1,7 +1,11 @@
 <h1>NgFor</h1>
+<input type="text" [(ngModel)]="newName">
+<button (click)="addName()">Add new name</button>
 <ul>
+  <li *ngIf="names.length == 0">na hoy elementos</li>
   <li *ngFor="let name of names; index as i">
     {{ i }}{{ name }}
+    <button (click)="deleteName(i)">delete</button>
   </li>
 </ul>
 <hr>
