@@ -1,3 +1,10 @@
+<h1>NgFor</h1>
+<ul>
+  <li *ngFor="let name of names; index as i">
+    {{ i }}{{ name }}
+  </li>
+</ul>
+<hr>
 <h1>NgIf</h1>
 <input type="text" [(ngModel)]="person.name">
 <input type="number" [(ngModel)]="person.age" min="10" max="30">

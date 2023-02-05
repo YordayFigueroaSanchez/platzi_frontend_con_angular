@@ -16,6 +16,7 @@ export class AppComponent {
   name : 'YFS',
   img : 'https://www.w3schools.com/howto/img_avatar.png'
   }
+  names : string[] = ['name01','name02','name03','name04',]
 
   onToggle(){
     this.btnDisabled = !this.btnDisabled;
