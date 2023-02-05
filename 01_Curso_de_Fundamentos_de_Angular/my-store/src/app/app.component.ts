@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-store';
+  age = 39;
+  name = 'YFS';
+  img = 'https://www.w3schools.com/howto/img_avatar.png';
 }
