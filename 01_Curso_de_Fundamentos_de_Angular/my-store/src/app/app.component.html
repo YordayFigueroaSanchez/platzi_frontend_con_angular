@@ -1,3 +1,9 @@
+<h1>NgIf</h1>
+<input type="text" [(ngModel)]="person.name">
+<input type="number" [(ngModel)]="person.age" min="10" max="30">
+<p *ngIf="person.name === 'yfs'">Soy yfs</p>
+<p *ngIf="person.name === 'aaa' && person.age === 20">Soy aaa con 20</p>
+<hr>
 <h1>NgModel</h1>
 <input type="text" required #nameInput="ngModel" [(ngModel)]="person.name">
 <p>Valid : {{ nameInput.valid }} </p>
