@@ -30,4 +30,10 @@ export class AppComponent {
     console.log(element.scrollTop);
 
   }
+
+  onChange(event:Event){
+    const element = event.target as HTMLInputElement;
+    this.person.name = element.value;
+
+  }
 }
